@@ -1,5 +1,5 @@
 @media screen and (min-width: 1200px) {
-  main z.side {
+  main .side {
     width: 9.375rem;
   }
 }
