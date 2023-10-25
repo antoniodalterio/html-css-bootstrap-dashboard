@@ -6,9 +6,36 @@
 COLOR
 ********
 */
+:root {
+  --search: #e5e5e5;
+}
 
+.ad-bg-search,
+.ad-search input {
+  background-color: var(--search);
+}
 /* 
 *******
 HEADER
 ********
 */
+.header {
+  height: 70px;
+}
+
+.ad-search {
+  outline: none;
+}
+
+.img-small {
+  width: 3.4375rem;
+}
+
+ul {
+  list-style: none;
+}
+
+nav a {
+  font-size: 25px;
+  line-height: 1;
+}
