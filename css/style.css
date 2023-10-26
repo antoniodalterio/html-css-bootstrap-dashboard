@@ -83,3 +83,7 @@ td img {
 .ad-size-table {
   width: 250px;
 }
+
+.ad-gutter-off {
+  --bs-gutter-x: var(--bs-gutter-x) 0px;
+}
