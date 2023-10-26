@@ -20,7 +20,7 @@ HEADER
 ********
 */
 header {
-  height: 70px;
+  height: 4.375rem;
 }
 
 .ad-search {
@@ -28,17 +28,26 @@ header {
 }
 
 .img-small {
-  width: 3.4375rem;
+  width: 60px;
 }
 
-ul {
-  list-style: none;
+.img-large {
+  width: 150px;
 }
 
 nav a {
-  font-size: 25px;
+  font-size: 20px;
+}
+
+.fa-magnifying-glass {
   line-height: 1;
 }
+
+/* 
+*******
+MAIN
+********
+*/
 
 main {
   height: calc(100vh - 70px);
@@ -60,5 +69,9 @@ main .side {
 main .contenuto-main {
   width: calc(100% - 70px);
   height: 100%;
-  background-color: blueviolet;
+  background-color: #f8f9fa;
+}
+
+.ad-bg-badge {
+  background-color: rgba(0, 0, 0, 0.212);
 }
