@@ -1,0 +1,14 @@
+/* 
+*****************
+Hover
+*****************
+*/
+
+.side li:hover,
+.side .col-base:hover {
+  background-color: rgba(255, 255, 255, 0.541);
+}
+
+tr:hover > td {
+  background-color: var(--search);
+}

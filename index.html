@@ -108,10 +108,10 @@
                 <a href=""><i class="fa-solid fa-bell text-warning"></i></a>
               </button>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Profilo</a></li>
+                <li><a class="dropdown-item" href="#">Fatturazione</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">Logout</a>
                 </li>
               </ul>
             </span>
@@ -132,26 +132,34 @@
         <!-- container side bar -->
         <div class="d-flex text-white h-100 contenuto-nav">
           <!-- col 1 menu -->
-          <ul class="p-0 list-unstyled">
+          <ul class="w-100 d-flex flex-column align-items-center list-unstyled">
             <li>
-              <i class="fa-solid fa-house py-2"></i>
-              <span class="d-none d-xl-inline ps-2">Home</span>
+              <a href="#" class="text-decoration-none text-white">
+                <i class="fa-solid fa-house py-2"></i>
+                <span class="d-none d-xl-inline ps-2">Home</span></a
+              >
             </li>
             <li>
-              <i class="fa-solid fa-chart-simple py-2"></i>
-              <span class="d-none d-xl-inline ps-2">Stast</span>
+              <a href="#" class="text-decoration-none text-white">
+                <i class="fa-solid fa-chart-simple py-2"></i>
+                <span class="d-none d-xl-inline ps-2">Stast</span></a
+              >
             </li>
             <li>
-              <i class="fa-solid fa-signal py-2"></i>
-              <span class="d-none d-xl-inline ps-2">Signal</span>
+              <a href="#" class="text-decoration-none text-white">
+                <i class="fa-solid fa-signal py-2"></i>
+                <span class="d-none d-xl-inline ps-2">Signal</span></a
+              >
             </li>
           </ul>
           <!-- col 1 menu -->
 
           <!-- col 2 account -->
           <div class="col-base">
-            <i class="fa-solid fa-gear pe-2"></i
-            ><span class="d-none d-xl-inline">Account</span>
+            <a href="#" class="text-decoration-none text-white">
+              <i class="fa-solid fa-gear pe-2"></i
+              ><span class="d-none d-xl-inline">Account</span></a
+            >
           </div>
           <!-- col 2 account -->
         </div>
@@ -183,7 +191,7 @@
             >
               <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasRightLabel">
-                  Inserisci un nuono studente
+                  Inserisci un nuovo studente
                 </h5>
                 <button
                   type="button"
@@ -192,11 +200,12 @@
                   aria-label="Close"
                 ></button>
               </div>
-
+              <!-- offcanvas body -->
               <div class="offcanvas-body w-10">
                 <form action="get">
-                  <div class="d-flex gap-3">
-                    <div class="flex-grow-1">
+                  <!--  input nome cognome -->
+                  <div class="row">
+                    <div class="col-xl-6 col-12">
                       <label for="nome">Nome</label>
                       <input
                         class="form-control mt-2"
@@ -205,7 +214,7 @@
                         aria-label="default input example"
                       />
                     </div>
-                    <div class="flex-grow-1">
+                    <div class="col-xl-6 col-12">
                       <label for="cognome">Cognome</label>
                       <input
                         class="form-control mt-2"
@@ -215,9 +224,12 @@
                       />
                     </div>
                   </div>
-                  <div class="d-flex gap-3 mt-3">
-                    <div class="flex-grow-1">
-                      <label for="email">email</label>
+                  <!--input nome cognome -->
+
+                  <!--input Email e passw -->
+                  <div class="row">
+                    <div class="col-xl-6 col-12 mt-3">
+                      <label for="email">Email</label>
                       <div class="input-group mt-2">
                         <span class="input-group-text" id="basic-addon1"
                           >@</span
@@ -231,7 +243,7 @@
                         />
                       </div>
                     </div>
-                    <div class="flex-grow-1">
+                    <div class="col-xl-6 col-12 mt-3">
                       <label for="password">Password</label>
                       <input
                         class="form-control mt-2"
@@ -241,9 +253,12 @@
                       />
                     </div>
                   </div>
+                  <!--input Email e passw -->
+
+                  <!--input indirizzo -->
                   <div class="mt-3">
                     <div class="flex-grow-1">
-                      <label for="indirizzo">indirizzo</label>
+                      <label for="indirizzo">Indirizzo</label>
                       <input
                         class="form-control mt-2"
                         type="text"
@@ -252,8 +267,11 @@
                       />
                     </div>
                   </div>
-                  <div class="d-flex gap-3 mt-3">
-                    <div class="flex-grow-1">
+                  <!--input indirizzo -->
+
+                  <!--input città stato cap -->
+                  <div class="row">
+                    <div class="col-xl-7 col-12 mt-3">
                       <label for="citta">Città</label>
                       <input
                         class="form-control mt-2"
@@ -262,19 +280,19 @@
                         aria-label="default input example"
                       />
                     </div>
-                    <div class="flex-grow-1">
+                    <div class="col-xl-3 col-12 mt-3">
                       <label for="stato">Stato</label>
                       <select
                         class="form-select mt-2"
                         aria-label="Default select example"
                       >
                         <option selected>Scegli...</option>
-                        <option value="IT">italia</option>
+                        <option value="IT">Italia</option>
                         <option value="ES">Spagna</option>
                         <option value="DE">Germania</option>
                       </select>
                     </div>
-                    <div class="flex-grow-3">
+                    <div class="col-xl-2 col-12 mt-3">
                       <label for="cap-citta" class="text-uppercase">cap</label>
                       <input
                         class="form-control mt-2"
@@ -284,6 +302,9 @@
                       />
                     </div>
                   </div>
+                  <!--input città stato cap -->
+
+                  <!--input selezione file foto -->
                   <div class="mt-3">
                     <label for="foto">Foto</label>
                     <div class="input-group mt-2">
@@ -294,7 +315,9 @@
                       />
                     </div>
                   </div>
+                  <!--input selezione file foto -->
 
+                  <!--input check box -->
                   <div class="form-check mt-4">
                     <input
                       class="form-check-input"
@@ -306,13 +329,17 @@
                       seleziona per proseguire
                     </label>
                   </div>
+                  <!--input check box -->
 
+                  <!--input button -->
                   <div class="mt-3">
                     <button type="submit" class="btn btn-primary">salva</button>
                     <button type="reset" class="btn btn-warning">svuota</button>
                   </div>
+                  <!--input button -->
                 </form>
               </div>
+              <!-- offcanvas body -->
             </div>
             <!-- offcanvas left con i vari input interni  -->
           </div>
@@ -367,7 +394,6 @@
         <!-- top bar main -->
 
         <!-- main content cone le card -->
-
         <div class="h-100 w-100 row ad-gutter-off">
           <!-- col 1  -->
           <div class="py-4 px-2 col-12 col-xl-8">
