@@ -55,7 +55,7 @@
               />
             </div>
           </div>
-          <div class="col">
+          <div class="col overflow-hidden">
             <form action="get">
               <div
                 class="input-group rounded border py-2 ad-bg-search d-flex align-items-center"
@@ -63,7 +63,7 @@
                 <label><i class="fa-solid fa-magnifying-glass px-2"></i></label>
                 <input
                   type="search"
-                  class="border-0 col ad-search ad-bg-search px-2"
+                  class="border-0 col ad-search ad-bg-search px-2 overflow-hidden"
                   placeholder="Prova a cercare: Lezioni di Laravel"
                   aria-label="Username"
                   aria-describedby="basic-addon1"
@@ -127,7 +127,7 @@
           </div>
         </div>
       </div>
-      <div class="contenuto-main">
+      <div class="contenuto-main overflow-auto">
         <div class="w-100 bg-primary d-lg-flex p-3 text-white">
           <div class="order-lg-3 col col-lg-4 col-xl-2 mb-3">
             <span class="pe-3">Nuovo Studente</span>
@@ -159,6 +159,80 @@
             <p>Studenti online negli ultimi 30 minuti</p>
             <h2>125</h2>
           </div>
+        </div>
+
+        <div class="h-100">
+          <div class="bg-success px-2 py-4">
+            <div>
+              <div class="card">
+                <h2 class="card-header">Prossime classi</h2>
+                <div class="card-body">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col" class="d-none d-xl-table-cell">
+                          Data inizio
+                        </th>
+                        <th scope="col" class="d-none d-lg-table-cell">ROI</th>
+                        <th scope="col">Stato</th>
+                        <th scope="col">Azioni</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row" class="ad-size-table">
+                          <img src="img/class-avatar.png" alt="logo classe" />
+                          <span>Classe 75</span>
+                        </td>
+                        <td class="d-none d-xl-table-cell">15 feb 2021</td>
+                        <td class="d-none d-lg-table-cell">20%</td>
+                        <td>bottone</td>
+                        <td>
+                          <span>bottone</span>
+                          <span>bottone</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="ad-size-table">
+                          <img src="img/class-avatar.png" alt="logo classe" />
+                          <span>Classe 75</span>
+                        </td>
+                        <td class="d-none d-xl-table-cell">15 feb 2021</td>
+                        <td class="d-none d-lg-table-cell">20%</td>
+                        <td>bottone</td>
+                        <td>
+                          <span>bottone</span>
+                          <span>bottone</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="ad-size-table">
+                          <img src="img/class-avatar.png" alt="logo classe" />
+                          <span>Classe 75</span>
+                        </td>
+                        <td class="d-none d-xl-table-cell">15 feb 2021</td>
+                        <td class="d-none d-lg-table-cell">20%</td>
+                        <td>bottone</td>
+                        <td>
+                          <span>bottone</span>
+                          <span>bottone</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="card">
+                <h2 class="card-header">Prossime classi</h2>
+                <div class="card-body"></div>
+              </div>
+            </div>
+          </div>
+          <div class="h-50 bg-danger"></div>
         </div>
       </div>
     </main>

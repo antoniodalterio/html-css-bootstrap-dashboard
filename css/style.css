@@ -75,3 +75,11 @@ main .contenuto-main {
 .ad-bg-badge {
   background-color: rgba(0, 0, 0, 0.212);
 }
+
+td img {
+  width: 1.875rem;
+}
+
+.ad-size-table {
+  width: 250px;
+}
