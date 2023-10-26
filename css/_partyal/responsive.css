@@ -2,4 +2,7 @@
   main .side {
     width: 9.375rem;
   }
+  .offcanvas.offcanvas-end {
+    width: 60%;
+  }
 }

@@ -8,3 +8,15 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #f8f9fa;
 }
+
+td button i {
+  font-size: 14px;
+}
+
+.ad-bg-badge {
+  background-color: rgba(0, 0, 0, 0.212);
+}
+
+.ad-search {
+  outline: none;
+}

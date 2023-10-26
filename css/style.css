@@ -72,10 +72,6 @@ main .contenuto-main {
   background-color: #f8f9fa;
 }
 
-.ad-bg-badge {
-  background-color: rgba(0, 0, 0, 0.212);
-}
-
 td img {
   width: 1.875rem;
 }
@@ -86,4 +82,8 @@ td img {
 
 .ad-gutter-off {
   --bs-gutter-x: var(--bs-gutter-x) 0px;
+}
+
+.offcanvas.offcanvas-end {
+  width: 100%;
 }
